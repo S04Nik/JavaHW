@@ -20,6 +20,8 @@ public class StartUp{
         clients.add(new Client("Sasha"));
         clients.add(new Client("Ivan"));
         clients.add(new Client("Alex"));
+        clients.add(new Client("Petro"));
+        clients.add(new Client("Igor"));
         for (Client item:clients) {
             item.MakeRequest(myServer);
         }
