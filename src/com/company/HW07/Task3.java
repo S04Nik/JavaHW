@@ -26,7 +26,7 @@ class JThread extends Thread {
             int countBytes=-1; String text = null;
             while((countBytes=getTxt.read(buffer))!=-1)
             {
-                text=new String(buffer,0,countBytes,"utf-8");
+                text=new String(buffer,0,countBytes, StandardCharsets.UTF_8);
             }
             String newText="";
             if (text != null) {
